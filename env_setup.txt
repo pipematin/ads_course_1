@@ -1,0 +1,18 @@
+conda create --name hse_env
+
+# add this env to jupyter lab
+conda activate hse_env
+conda install ipykernel
+ipython kernel install --user --name=hse_env_kernel
+conda deactivate
+
+# with previously esxecuted: 
+# conda activate hse_env
+
+conda install -c anaconda requests 
+conda install -c conda-forge tqdm 
+conda install -c conda-forge ipywidgets
+conda install -c anaconda numpy 
+conda install -c conda-forge matplotlib 
+
+conda install -c anaconda pip 
